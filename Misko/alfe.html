@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodaja Delova Automobila</title>
+    <style>
+       body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .box {
+        border: 2px solid #333;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #6cc0c2;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Flexbox container za 3 boxa u jednom redu */
+    .box-container {
+        display: flex; /* Postavljamo boxove u red */
+        justify-content: space-between; /* Raspoređujemo boxove ravnomerno sa razmakom između njih */
+        gap: 20px; /* Razmak između boxeva */
+        flex-wrap: wrap; /* Omogućava wraping ako je prostor sužen */
+    }
+	
+	 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        margin-right: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+        color: #007BFF;
+    }
+	
+	.box img {
+        height: 200px;
+        width: 200px;
+    }
+	
+        header {
+            background-color: #00796b; /* Tamnija plava */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .part-box {
+            background-color: #80deea; /* Svetlija plava za box */
+            width: 22%;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .part-box:hover {
+            transform: scale(1.05);
+        }
+        .part-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .part-box h3 {
+            color: #00796b;
+            font-size: 18px;
+        }
+        .part-box p {
+            font-size: 14px;
+            color: #555;
+        }
+        .part-box .price {
+            font-size: 16px;
+            color: #d32f2f; /* Crvena za cenu */
+            font-weight: bold;
+        }
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="box">
+        <ul>
+            <li><a href="index.html">Kontakt</a></li>
+            <li><a href="2.html">O Nama</a></li>
+            <li><a href="3.html">Delovi</a></li>
+            <li><a href="4.html">Vozila</a></li>
+            <li><a href="5.html">Vaša ponuda</a></li>
+        </ul>
+    </div>
+	<h1 align="center">Auto-otpad Lekic</h1>
+		<h2 align=center>Alfe Delovi</h2>
+
+<div class="container">
+    <!-- Box 1 -->
+<div class="part-box">
+    <img src="slike/1.jpg" alt="Auto Deo 1">
+    <h3>Menjac</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 40 e </p>
+    <p>Opis: Menjac sa 5 brzina za Alfu Romeo 147.</p>
+</div>
+
+<!-- Box 2 -->
+<div class="part-box">
+    <img src="slike/2.jpg" alt="Auto Deo 1">
+    <h3>Menjac</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 40 e </p>
+    <p>Opis: Menjac sa 5 brzina za Alfu Romeo 147.</p>
+</div>
+
+<!-- Box 3 -->
+<div class="part-box">
+    <img src="slike/3.jpg" alt="Auto Deo 3">
+    <h3>Glava Motora</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 50e </p>
+    <p>Opis: Glava motora za Alfu Romeo 147 8v 1.9 dizal.</p>
+</div>
+
+<!-- Box 4 -->
+<div class="part-box">
+    <img src="slike/7.jpg" alt="Auto Deo 3">
+    <h3>Glava Motora</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 50e</p>
+    <p>Opis: Glava motora za Alfu Romeo 147 8v 1.9 dizal.</p>
+</div>
+
+<!-- Box 5 -->
+<div class="part-box">
+    <img src="slike/5.jpg" alt="Auto Deo 5">
+    <h3>Felne</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 90e sve 4</p>
+    <p>Opis: 15-ke sa zimskim gumama. Felne nisu krive. </p>
+</div>
+
+<!-- Box 6 -->
+<div class="part-box">
+    <img src="slike/6.jpg" alt="Auto Deo 5">
+    <h3>Felne</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 90e sve 4</p>
+    <p>Opis: 15-ke sa zimskim gumama. Felne nisu krive. </p>
+</div>
+
+
+
+<!-- Box 8 -->
+<div class="part-box">
+    <img src="slike/8.jpg" alt="Auto Deo 8">
+    <h3>Pumpa viskokog pritiska</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 40e </p>
+    <p>Opis: Pumpa viskokog pritiska za Alfu Romeo 147 dizel.</p>
+</div>
+
+<!-- Box 9 -->
+<div class="part-box">
+    <img src="slike/9.jpg" alt="Auto Deo 9">
+    <h3></h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 10e</p>
+    <p>Opis: </p>
+</div>
+
+<!-- Box 10 -->
+<div class="part-box">
+    <img src="slike/10.jpg" alt="Auto Deo 10">
+    <h3>Protokomer</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 20 e</p>
+    <p>Opis: Protokomer za Alfu Romeo 147 1.9 .</p>
+</div>
+
+<!-- Box 11 -->
+<div class="part-box">
+    <img src="slike/11.jpg" alt="Auto Deo 11">
+    <h3>Inter Culer</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 40e</p>
+    <p>Opis:Inter Culer za Alfu Romeo 147.</p>
+</div>
+
+<!-- Box 12 -->
+<div class="part-box">
+    <img src="slike/12.jpg" alt="Auto Deo 12">
+    <h3>Podizaci stakla</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 30e</p>
+    <p>Opis: Podizaci stakla za Alfu Romeo 147 za petoro vrata.</p>
+</div>
+
+<!-- Box 13 -->
+<div class="part-box">
+    <img src="slike/13.jpg" alt="Auto Deo 13">
+    <h3>Kompresor klime</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 50 e</p>
+    <p>Opis: Kompresor klime Alfa Rome 147 1.9 .</p>
+</div>
+
+<!-- Box 14 -->
+<div class="part-box">
+    <img src="slike/14.jpg" alt="Auto Deo 14">
+    <h3>Naslon za ruku</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 30e</p>
+    <p>Opis: Naslon za ruku za Alfu Romeo 147.</p>
+</div>
+
+
+
+<!-- Box 16 -->
+<div class="part-box">
+    <img src="slike/15.jpg" alt="Auto Deo 16">
+    <h3>Kompijuter</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 50 e</p>
+    <p>Opis: Kompijuter za Alfu Romeo 147 1.9 Dizel.</p>
+</div>
+
+<!-- Box 18 -->
+<div class="part-box">
+    <img src="slike/18.jpg" alt="Auto Deo 18">
+    <h3>Boca za antifriz</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 10e</p>
+    <p>Opis: Boca za antifriz za Alfu Romeo 147.</p>
+</div>
+
+<!-- Box 19 -->
+<div class="part-box">
+    <img src="slike/19.jpg" alt="Auto Deo 19">
+    <h3>Hladnjak za vodu</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 40e komplet </p>
+    <p>Opis: Hladnjak vode i ventilator za Alfu Romeo 147.</p>
+</div>
+
+<!-- Box 20 -->
+<div class="part-box">
+    <img src="slike/20.jpg" alt="Auto Deo 20">
+    <h3>Hladnjak klime</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 40 e</p>
+    <p>Opis: Hladnjak klime za Alfu Romeno 147.</p>
+</div>
+
+
+
+
+
+
+<!-- Box 24 -->
+<div class="part-box">
+    <img src="slike/24.jpg" alt="Auto Deo 24">
+    <h3>Eger ventil</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 20 e</p>
+    <p>Opis: Eger ventil za Alfu Romeo 147. </p>
+</div>
+
+
+
+<!-- Box 26 -->
+<div class="part-box">
+    <img src="slike/26.jpg" alt="Auto Deo 26">
+    <h3>Turbina</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 90e</p>
+    <p>Opis: Turbina za Alfu Romeo 147 1.9 JTD 8v.</p>
+</div>
+
+<div class="part-box">
+    <img src="slike/35.jpg" alt="Auto Deo 26">
+    <h3>Turbina</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 90e</p>
+    <p>Opis: Turbina za Alfu Romeo 147 1.9 JTD 8v.</p>
+</div>
+
+<div class="part-box">
+    <img src="slike/36.jpg" alt="Auto Deo 26">
+    <h3>Turbina</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 90e</p>
+    <p>Opis: Turbina za Alfu Romeo 147 1.9 JTD 8v.</p>
+</div>
+
+<div class="part-box">
+    <img src="slike/37.jpg" alt="Auto Deo 26">
+    <h3>Turbina</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 90e</p>
+    <p>Opis: Turbina za Alfu Romeo 147 1.9 JTD 8v.</p>
+</div>
+
+<div class="part-box">
+    <img src="slike/38.jpg" alt="Auto Deo 26">
+    <h3>Turbina</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 90e</p>
+    <p>Opis: Turbina za Alfu Romeo 147 1.9 JTD 8v.</p>
+</div>
+
+
+
+<!-- Box 27 -->
+<div class="part-box">
+    <img src="slike/27.jpg" alt="Auto Deo 27">
+    <h3>Dizne</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 70 e</p>
+    <p>Opis: Dizne za Alfu Romeo 147 1.9 JTD.</p>
+</div>
+
+<div class="part-box">
+    <img src="slike/34.jpg" alt="Auto Deo 31">
+    <h3>Dizne</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: 70 e</p>
+    <p>Opis: Dizne za Alfu Romeo 147 1.9 JTD.</p>
+</div>
+
+<!-- Box 28 -->
+<div class="part-box">
+    <img src="slike/28.jpg" alt="Auto Deo 28">
+	<img src="slike/29.jpg" alt="Auto Deo 29">
+	 <img src="slike/30.jpg" alt="Auto Deo 30">
+	 <img src="slike/33.jpg" alt="Auto Deo 33">
+    <h3>Delovi</h3>
+    <p>Godina proizvodnje: 2002</p>
+    <p class="price">Cena: Kontakt</p>
+    <p>Opis: Delovi za Alfu Romeo 147.</p>
+</div>
+</div>
+</body>
+</html>

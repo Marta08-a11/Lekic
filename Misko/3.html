@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodaja Delova</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .box {
+        border: 2px solid #333;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #6cc0c2;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Flexbox container za 3 boxa u jednom redu */
+    .box-container {
+        display: flex; /* Postavljamo boxove u red */
+        justify-content: space-between; /* Raspoređujemo boxove ravnomerno sa razmakom između njih */
+        gap: 20px; /* Razmak između boxeva */
+        flex-wrap: wrap; /* Omogućava wraping ako je prostor sužen */
+    }
+
+    /* Svaki box treba da zauzme jednaku širinu */
+    .box-item {
+        flex: 1 1 30%; /* Ovaj deo omogućava da boxevima bude fleksibilno širina, ali i da budu u istoj liniji */
+        min-width: 250px; /* Minimalna širina svakog boxa */
+        box-sizing: border-box; /* Uzimamo u obzir padding i border unutar širine */
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        margin-right: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+        color: #007BFF;
+    }
+	
+	.box img {
+        height: 200px;
+        width: 200px;
+    }
+        }
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .box-item {
+            background-color: #80deea;
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .box h3 {
+            color: #00796b;
+            font-size: 20px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<!-- Gornji meni sa linkovima -->
+ <div class="box">
+        <ul>
+            <li><a href="index.html">Kontakt</a></li>
+            <li><a href="2.html">O Nama</a></li>
+            <li><a href="3.html">Delovi</a></li>
+            <li><a href="4.html">Vozila</a></li>
+            <li><a href="5.html">Vaša ponuda</a></li>
+        </ul>
+    </div>
+	<h1 align="center">Auto-otpad Lekic</h1>
+		<h2 align=center>Delovi</h2>
+
+<div class="box-container">
+    <!-- Box za Automobile -->
+    <div class="box-item">
+        <div class="box">
+            <h3>Automobili</h3>
+            <select name="Automobili" id="automobili" onchange="window.location.href=this.value;">
+                <option value="">Izaberite Marka Automobila</option>
+                <option value="alfe.html">Alfa Romeo</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Box za Motore -->
+    <div class="box-item">
+        <div class="box">
+            <h3>Motori</h3>
+            <select name="Motori" id="motori" onchange="window.location.href=this.value;">
+                <option value="">Izaberite Marka Motora</option>
+                <option value="yamaha.html">Yamaha</option>
+                <option value="suzuki.html">Suzuki</option>
+                <option value="kawasaki.html">Kawasaki</option>
+                <option value="honda.html">Honda</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

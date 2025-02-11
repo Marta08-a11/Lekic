@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaša ponuda</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+        }
+
+        .box {
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #6cc0c2;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #007BFF;
+        }
+
+        .form-container {
+            width: 60%;
+            margin: 20px auto;
+            background-image: url("slike/promena.jpeg");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #ffffff; /* Plava boja za naslov */
+        }
+
+        /* Label boja teksta postavljena na belu */
+        .form-container label {
+            color: #ffffff; /* Bela boja za tekst unutar label */
+        }
+
+        /* Boja teksta unutar input i textarea postavljena na crnu */
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            color: #000000; /* Crna boja za tekst unutar inputa i textarea */
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <ul>
+            <li><a href="index.html">Kontakt</a></li>
+            <li><a href="2.html">O Nama</a></li>
+            <li><a href="3.html">Delovi</a></li>
+            <li><a href="4.html">Vozila</a></li>
+            <li><a href="5.html">Vaša ponuda</a></li>
+        </ul>
+    </div>
+
+    <h1 align="center">Auto-otpad Lekic</h1>
+    <h2 align="center">Vaša ponuda</h2>
+
+    <div class="form-container">
+        <h2>Pošaljite informaciju o vozilu</h2>
+        <form action="mailto:autootpadlekic@gmail.com" method="POST" enctype="multipart/form-data">
+        
+            <label for="text">Ime i Prezime</label>
+            <input type="text" id="text" name="text" required>
+            
+            <label for="phone">Broj telefona:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="description">Opis vozila:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="price">Cena vozila:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="vehicleImage">Slika vozila:</label>
+            <input type="file" id="vehicleImage" name="vehicleImage" accept="image/*">
+
+            <button type="submit">Pošaljite informaciju</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

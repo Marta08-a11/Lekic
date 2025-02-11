@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodaja Delova Automobila</title>
+    <style>
+       body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .box {
+        border: 2px solid #333;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #6cc0c2;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Flexbox container za 3 boxa u jednom redu */
+    .box-container {
+        display: flex; /* Postavljamo boxove u red */
+        justify-content: space-between; /* Raspoređujemo boxove ravnomerno sa razmakom između njih */
+        gap: 20px; /* Razmak između boxeva */
+        flex-wrap: wrap; /* Omogućava wraping ako je prostor sužen */
+    }
+	
+	 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        margin-right: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+        color: #007BFF;
+    }
+	
+	.box img {
+        height: 200px;
+        width: 200px;
+    }
+	
+        header {
+            background-color: #00796b; /* Tamnija plava */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .part-box {
+            background-color: #80deea; /* Svetlija plava za box */
+            width: 22%;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .part-box:hover {
+            transform: scale(1.05);
+        }
+        .part-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .part-box h3 {
+            color: #00796b;
+            font-size: 18px;
+        }
+        .part-box p {
+            font-size: 14px;
+            color: #555;
+        }
+        .part-box .price {
+            font-size: 16px;
+            color: #d32f2f; /* Crvena za cenu */
+            font-weight: bold;
+        }
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="box">
+        <ul>
+            <li><a href="index.html">Kontakt</a></li>
+            <li><a href="2.html">O Nama</a></li>
+            <li><a href="3.html">Delovi</a></li>
+            <li><a href="4.html">Vozila</a></li>
+            <li><a href="5.html">Vaša ponuda</a></li>
+        </ul>
+    </div>
+	<h1 align="center">Auto-otpad Lekic</h1>
+		<h2 align=center>Yamahe Delovi</h2>
+
+<div class="container">
+    <!-- Box 1 -->
+    <div class="part-box">
+        <img src="https://via.placeholder.com/150" alt="Auto Deo 1">
+        <h3>Branik prednji</h3>
+        <p>Godina proizvodnje: 2018</p>
+        <p class="price">Cena: 12,500 RSD</p>
+        <p>Opis: Prednji branik za automobil, u dobrom stanju, bez oštećenja.</p>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="part-box">
+        <img src="https://via.placeholder.com/150" alt="Auto Deo 2">
+        <h3>Prednje svetlo</h3>
+        <p>Godina proizvodnje: 2020</p>
+        <p class="price">Cena: 7,000 RSD</p>
+        <p>Opis: Prednje svetlo za vozilo, bez oštećenja, kao novo.</p>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="part-box">
+        <img src="https://via.placeholder.com/150" alt="Auto Deo 3">
+        <h3>Amortizer zadnji</h3>
+        <p>Godina proizvodnje: 2019</p>
+        <p class="price">Cena: 9,800 RSD</p>
+        <p>Opis: Amortizer zadnji za vozilo, koristi se samo 6 meseci.</p>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="part-box">
+        <img src="https://via.placeholder.com/150" alt="Auto Deo 4">
+        <h3>Izduvni sistem</h3>
+        <p>Godina proizvodnje: 2017</p>
+        <p class="price">Cena: 15,000 RSD</p>
+        <p>Opis: Potpuni izduvni sistem za automobil, u dobrom stanju.</p>
+    </div>
+</div>
+</body>
+</html>
